@@ -1,1 +1,199 @@
-Hello world
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Macky's Minerals: A magnificant catalog of minerals</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static 'css/global.css'%}">
+</head>
+<body>
+  <div class="bounds">
+    <div class="grid-100">
+      <a href="{% url 'home' %}">
+        <svg class="logo" viewBox="0 0 127.6 84.8" preserveAspectRation="xMinYMin meet">
+          <polygon points="42.7,84.8 49.6,79.4 40,62.5 51.2,43.5 51.2,43.5 25,0 0,55.6 "/>
+          <polygon class="logo--middle" points="52.9,79.5 52.9,79.5 84.8,80.1 59.7,35 43.3,62.4 "/>
+          <polygon points="127.6,61.4 127.6,61.4 110.3,13.5 110.3,13.5 70.3,48.1 70.3,48.1 88.3,80.5 95.3,81.4 95.3,81.4 "/>
+        </svg>
+        <h1 class="logo__name text-centered">Macky's Minerals</h1>
+      </a>
+      <p class="logo__text text-centered">They're not rocks!</p>
+    </div>
+    <div class="grid-100">
+      <ul class="minerals__container">
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Abelsonite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Abenakiite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Abernathyite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Abhurite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Abramovite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Abswurmbachite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Acanthite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Achavalite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Actinolite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Acuminite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Adamite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Adelite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Admontite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Aegirine</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Aenigmatite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Aerinite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Aerugite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Afghanite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Afwillite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Agardite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Agrellite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Agrinierite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Aheylite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Aikinite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Ajoite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Akatoreite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Akdalaite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Akimotoite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Aksaite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Aktashite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Alabandite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Alamosite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Alarsite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Albite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Albrechtshraufite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Aldermanite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Algrodonite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Aliettite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Allabogdanite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Allactite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Allanite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Allanpringite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Alloclasite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Allophane</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Altisite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Amakanite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Amesite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Amphibole</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Anandite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Anglesite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Ankerite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Annite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Anorthite</a>
+        </li>
+        <li class="minerals__item">
+          <a class="minerals__anchor" href="{% url 'mineral' mineral_pk='dummy_field' %}">Antarcticite</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="minerals__random">
+    <a class="minerals__anchor" href="#">Show random mineral</a>
+  </div>
+</body>
+</html>
