@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from .models import Mineral
 
@@ -14,4 +14,8 @@ def home_page(request):
 
 
 def mineral_detail(request, mineral_pk):
-    return render(request, 'website/detail.html', {'mineral': {}})
+    # fetch specific object based on pk
+    mineral = get_object_or_404(Mineral, pk=mineral_pk)
+
+    # load item to view
+    return render(request, 'website/detail.html', {'mineral': mineral})
