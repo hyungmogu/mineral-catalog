@@ -9,6 +9,10 @@ This is the sixth project to team tree house's Python Web Tech Degree.
 1. Create home page that lists all of minerals in database.
 2. Create a detail page that displays information about mineral.
 
+## Steps to accessing admin panel
+1. Once the server is running, type `http://127.0.0.1:8000/admin` in chrome
+2. Login into the panel with `Email: admin@example.com` and `Password: helloWorld`
+
 ## Steps to Running/Exiting the Program
 1. Install pipenv by typing `pip install pipenv` or `pip3 install pipenv` for python3 users
 2. In project root folder, install dependencies by typing `pipenv install`
