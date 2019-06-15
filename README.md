@@ -9,6 +9,11 @@ This is the sixth project to team tree house's Python Web Tech Degree.
 1. Create home page that lists all of minerals in database.
 2. Create a detail page that displays information about mineral.
 
+## Steps to running testing program
+1. Once in project root folder of virtual environment (`step 3` under Steps to Running/Exiting the Program), type `coverage run --source='.' manage.py website` to setup info about the % of code covered
+2. In project root folder, type `python manage.py test` to run the testing program
+3. In project root folder, type `coverage report` to see the result
+
 ## Steps to accessing admin panel
 1. Once the server is running, type `http://127.0.0.1:8000/admin` in a web browser
 2. Log into the panel with account registered in `step 5` below
