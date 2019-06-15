@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
+import random
 
 from .models import Mineral
 
@@ -19,3 +20,17 @@ def mineral_detail(request, mineral_pk):
 
     # load item to view
     return render(request, 'website/detail.html', {'mineral': mineral})
+
+
+def random_mineral(request):
+    random.seed()
+
+    # get all minerals
+    minerals_cnt = Mineral.objects.count()
+
+    # from all minerals randomly pick one in between range of 0
+    # to the length of file
+    pk = random.randint(1, minerals_cnt)
+
+    # redirect to mineral detail page
+    return redirect(mineral_detail, mineral_pk=pk)
